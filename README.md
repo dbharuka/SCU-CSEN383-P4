@@ -3,7 +3,6 @@
 This project simulates classic **Page Replacement Algorithms** used in operating systems for memory management. Implemented in **C**, the simulation allows running and comparing five different algorithms for analyzing page fault behavior.
 
 ## Implemented Algorithms
-
 - **FCFS (First-Come, First-Served)** – `FCFS.c`
 - **LFU (Least Frequently Used)** – `LFU.c`
 - **LRU (Least Recently Used)** – `LRU.c`
@@ -11,7 +10,6 @@ This project simulates classic **Page Replacement Algorithms** used in operating
 - **Random Replacement** – `R.c`
 
 ## Project Structure
-
 ```
 .
 │   Project Description.pdf      # Problem statement and requirements
@@ -39,18 +37,14 @@ This project simulates classic **Page Replacement Algorithms** used in operating
 ## Compilation and Execution
 
 ### Using Make
-
 ```bash
 cd src
 make
 ```
-
 This compiles all the `.c` files and creates the `simulation` executable.
 
 ### Executing
-
 Run the simulation with the desired algorithm name:
-
 ```bash
 ./simulation FCFS
 ./simulation LRU
@@ -60,9 +54,7 @@ Run the simulation with the desired algorithm name:
 ```
 
 ### Saving Output
-
 Redirect the output to text files inside the `output/` directory:
-
 ```bash
 ./simulation FCFS > ../output/FCFS.txt
 ./simulation LRU > ../output/LRU.txt
@@ -72,22 +64,18 @@ Redirect the output to text files inside the `output/` directory:
 ```
 
 ### Cleaning the Build
-
 To clean compiled files:
-
 ```bash
 make clean
 ```
 
 ## Output Details
-
 Each output file includes:
 - Sequence of page requests and frame status updates
 - Page faults and replacements
 - Final summary including hit/miss ratios and total faults
 
 ## Notes
-
 - Ensure that `output/` folder exists before saving results via redirection.
 - The simulation takes user input or internally defined sequences depending on the implementation.
 - All algorithms follow the same interface for ease of comparison.
